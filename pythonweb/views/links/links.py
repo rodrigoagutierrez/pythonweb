@@ -7,7 +7,7 @@ from pythonweb.styles.styles import Size
 
 
 def links() -> rx.Component:
-    return rx.vstack(
+    return rx.chakra.vstack(
         title("Comunidad"),
         link_button(
             "Twitch",

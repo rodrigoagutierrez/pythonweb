@@ -13,11 +13,11 @@ class State(rx.State):
 
 
 def index()-> rx.Component:
-    return rx.box(
+    return rx.chakra.box(
         rx.script("document.documentElement.lang='es'"),
         navbar(),
-        rx.center(
-            rx.vstack(
+        rx.chakra.center(
+            rx.chakra.vstack(
                 header(),
                 links(),
                 sponsors(),

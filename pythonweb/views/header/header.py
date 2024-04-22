@@ -8,9 +8,9 @@ from pythonweb.components.info_text import info_text
 
 
 def header() -> rx.Component:
-    return rx.vstack(
-        rx.hstack(
-            rx.avatar(
+    return rx.chakra.vstack(
+        rx.chakra.hstack(
+            rx.chakra.avatar(
                 name="Rodrigo Gutiérrez",
                 size="xl",
                 src="avatar.jpg",
@@ -20,18 +20,18 @@ def header() -> rx.Component:
                 border="4px",
                 border_color=Color.PRIMARY.value
             ),
-            rx.vstack(
-                rx.heading(
+            rx.chakra.vstack(
+                rx.chakra.heading(
                     "Rodrigo Gutiérrez",
                     size="lg",
                     color=TextColor.BODY.value,
                 ),
-                rx.text(
+                rx.chakra.text(
                     "@rodridev",
                     margin_top=Size.ZERO.value,
                     color=Color.PRIMARY.value
                 ),
-                rx.hstack(
+                rx.chakra.hstack(
                     link_icon(
                         "icons/github.svg",
                         const.GITHUB_URL,
@@ -68,22 +68,22 @@ def header() -> rx.Component:
             ),
             spacing=Size.DEFAULT.value
         ),
-        rx.flex(
+        rx.chakra.flex(
             info_text(
                 f"{experience()}+",
                 "años de experiencia"
             ),
-            rx.spacer(),
+            rx.chakra.spacer(),
             info_text(
                 "100+", "aplicaciones creadas"
             ),
-            rx.spacer(),
+            rx.chakra.spacer(),
             info_text(
                 "1M+", "seguidores"
             ),
             width="100%"
         ),
-        rx.text(
+        rx.chakra.text(
             f"""
             Soy ingeniero de software y actualmente trabajo como freelance
             full-stack developer iOS y Android.

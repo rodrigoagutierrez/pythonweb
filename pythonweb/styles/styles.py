@@ -33,7 +33,7 @@ BASE_STYLE = {
     "background_color" : Color.BACKGROUND.value,
 
     
-    rx.Button: {
+    rx.chakra.Button: {
         "width" : "100%",
         "height" : "100%",
         "display" : "block",
@@ -47,7 +47,7 @@ BASE_STYLE = {
             "background_color" : Color.SECONDARY.value,
         }   
     },
-    rx.Link: {
+    rx.chakra.Link: {
         "text_decoration" : "none",
         "_hover" : {},
     }

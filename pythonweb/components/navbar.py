@@ -6,8 +6,8 @@ from pythonweb.styles.styles import styles
 
 
 def navbar() -> rx.Component:
-    return rx.hstack(
-        rx.text(
+    return rx.chakra.hstack(
+        rx.chakra.text(
             "RodriDev",
             height=Size.BIG.value,          
             margin=Size.DEFAULT.value,

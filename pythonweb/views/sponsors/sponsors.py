@@ -6,9 +6,9 @@ from pythonweb.components.link_sponsor import link_sponsor
 
 
 def sponsors() -> rx.Component:
-    return rx.vstack(
+    return rx.chakra.vstack(
         title("Colaboran"),
-        rx.responsive_grid(
+        rx.chakra.responsive_grid(
             link_sponsor(
                 "elgato.png",
                 const.ELGATO_URL,
